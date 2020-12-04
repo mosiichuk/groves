@@ -1,0 +1,59 @@
+.home
+    padding: 60px 0 100px
+
+.infinite-album-banner
+    color: $text-grey
+    padding: 12px 76px 12px 54px
+    background: url("../img/Home/infinite.png") no-repeat top center / cover
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+
+    +screen-up(md)
+        text-align: left
+        flex-direction: row
+        justify-content: space-between
+
+    & h1
+        font-family: Raleway, sans-serif
+        font-weight: $regular-text
+        font-size: 32px
+        line-height: 38px
+        text-transform: uppercase
+        margin: 0 0 24px
+
+    & p
+        margin: 0 0 16px
+
+        +screen-up(md)
+            margin: 0
+
+.pages-navigation
+    padding: 5% 0 0
+    display: flex
+    flex-direction: column
+
+    +screen-up(md)
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-between
+
+.page-navigation
+    width: 100%
+    flex: 0 47%
+    position: relative
+    margin-bottom: 5%
+
+    & img
+        width: 100%
+        height: auto
+
+    & h2
+        position: absolute
+        top: 5%
+        left: 5%
+        font-size: 32px
+        line-height: 38px
+        text-transform: lowercase
+        color: $text-grey

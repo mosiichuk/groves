@@ -1,0 +1,60 @@
+.music-section
+    padding: 100px 0
+
+.album-iframe
+    width: 100%
+    min-height: 767px
+
+.cabin-font
+    font-family: 'Cabin Sketch', cursive
+
+.post
+
+    &-info
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+
+    &-info-hs
+
+        +screen-up(md)
+            min-height: 330px
+
+    & iframe
+        display: block
+        width: 100%
+
+    & h2
+        text-align: center
+        font-size: 32px
+        line-height: 37px
+        margin: 0 0 32px
+
+        +screen-up(md)
+            margin: 0
+            text-align: left
+
+    & p
+        margin: 0 0 16px
+
+        +screen-up(md)
+            margin: 0
+
+    & .band
+        margin: 32px 0
+
+        +screen-up(md)
+            margin: 68px 0 100px
+
+        & > p
+            margin: 0 0 16px
+
+    &-divider
+        width: 33%
+        margin: 100px auto
+        height: 1px
+        background-color: #DED5D5
+
+        +screen-up(md)
+            width: 50%

@@ -1,6 +1,9 @@
 html
     scroll-behavior: smooth
 
+span
+    color: $text-accent
+
 body
     font-family: Raleway, sans-serif
     font-weight: $regular-text
@@ -9,7 +12,6 @@ body
 
     +screen-up(sm)
         font-size: 18px
-        line-height: 21px
 
 .text-bold
     font-weight: $bold-text
@@ -21,7 +23,6 @@ body
     font-family: Archivo Black, sans-serif
     font-weight: $regular-text
     font-size: 32px
-    line-height: 35px
 
     +screen-up(md)
         margin: 0
@@ -30,3 +31,14 @@ body
     font-family: Raleway
     font-size: 32px
     font-weight: $regular-text
+
+.blue-link
+    color: $text-accent !important
+    text-decoration: underline !important
+
+.separator
+    background: $text-grey
+    width: 450px
+    height: 1px
+    margin-left: 50%
+    transform: translate(-50%, 0)

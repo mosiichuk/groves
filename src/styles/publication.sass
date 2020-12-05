@@ -23,7 +23,7 @@
         padding-bottom: 0
 
 .block
-    border: 0.5px solid $text-grey
+    border: 0.5px solid $lines-grey
     margin-bottom: 24px
 
     +screen-down(md)
@@ -71,3 +71,27 @@
 
         & .title-wrap
             padding-bottom: 0
+
+.modal
+
+    &-dialog
+        max-width: 930px
+        width: 100%
+
+    &-header
+        padding: 5% 5% 7%
+        border: none
+
+    &-body
+
+        & .text-bold
+            margin: 0 0 5%
+
+            +screen-up(md)
+                margin: 0 0 8%
+
+        & .row:not(:last-child)
+            margin-bottom: 32px
+
+        & img
+            width: 100%

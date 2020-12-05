@@ -217,16 +217,18 @@
 
         <div class="row align-items-stretch">
             <div class="col-12 col-md-6">
-                <div
-                    class="block block-patent d-flex flex-column text-md-left text-center align-items-center">
-                    <div class="card-content">
-                        <p class="text-bold title-card text-capitalize">System and method for
-                            producing a more harmonious musical accompaniment</p>
-                        <p>M Serletic, RA Groves, JFD Mitchell ...</p>
-                        <p class="mb-4">US Patent 8,779,268</p>
+                <a data-toggle="modal" data-target="#patent1">
+                    <div
+                        class="block block-patent d-flex flex-column text-md-left text-center align-items-center">
+                        <div class="card-content">
+                            <p class="text-bold title-card text-capitalize">System and method for
+                                producing a more harmonious musical accompaniment</p>
+                            <p>M Serletic, RA Groves, JFD Mitchell ...</p>
+                            <p class="mb-4">US Patent 8,779,268</p>
+                        </div>
+                        <img src="./img/Publications/patent1.png" class="img-card" alt="Patent">
                     </div>
-                    <img src="./img/Publications/patent1.png" class="img-card" alt="Patent">
-                </div>
+                </a>
             </div>
             <div class="col-12 col-md-6">
                 <div
@@ -322,5 +324,92 @@
 </section>
 
 ${require('./partials/footer.html')}
+<div class="modal-backdrop d-none fade" id="backdrop"></div>
+
+<div class="modal fade d-none" id="patent1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><img src="./icons/close.svg" alt="Close"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-10">
+                            <p class="text-bold">System and method for producing a more harmonious
+                                musical accompaniment</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-3 mb-3 mb-md-0">
+                            <span>Inventors:</span>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <p>M Serletic, R Groves, V Mynampati, R Rassool</p>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-12 col-md-3 mb-3 mb-md-0">
+                            <span>Publication date:</span>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <p>2014/7/15</p>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-12 col-md-3 mb-3 mb-md-0">
+                            <span>Patent office:</span>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <p>US</p>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-12 col-md-3 mb-3 mb-md-0">
+                            <span>Patent number:</span>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <p>8779268</p>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-12 col-md-3 mb-3 mb-md-0">
+                            <span>Application number:</span>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <p>13194819</p>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-12 col-md-3 mb-3 mb-md-0">
+                            <span>Description:</span>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <p>A system and process for producing a more harmonious musical
+                                accompaniment for a musical compilation, the process comprising
+                                determining a plurality of probable key signatures for the musical
+                                compilation, creating an interval profiling matrix for each of the
+                                probable key signatures, finding products of a major key interval
+                                profile matrix with each of the interval profiling matrices, summing
+                                each of the major key interval products into a running major key
+                                sum, finding a product of a minor key interval profile with each of
+                                the interval profiling matrices, summing each of the minor key
+                                interval products into a running minor key sum, and selecting the
+                                most probable key signature from the plurality of probable key
+                                signatures by comparing the minor key sum and the major key sum.</p>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-12 col-md-10">
+                            <img src="./img/Speaking/stanford_talk.png" alt="placeholder">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

@@ -6,11 +6,15 @@ const plugins = require('./webpack.plugins');
 
 module.exports = {
     context: path.join(config.root, config.paths.src),
-    entry: [
-        path.join(config.root, config.paths.src, '/app.js'),
-    ],
+    entry: {
+        common: path.join(config.root, config.paths.src, '/bundle/common.js'),
+        music: path.join(config.root, config.paths.src, '/bundle/music-page.js'),
+        publications: path.join(config.root, config.paths.src, '/bundle/publications-page.js'),
+        projects: path.join(config.root, config.paths.src, '/bundle/projects-page.js'),
+        speaking: path.join(config.root, config.paths.src, '/bundle/speaking-page.js'),
+    },
     output: {
-        filename: './js/bundle.[hash].js',
+        filename: './js/[name].[hash].js',
         path: path.resolve(__dirname, config.paths.dist)
     },
     mode: ['production', 'development'].includes(config.env) ?

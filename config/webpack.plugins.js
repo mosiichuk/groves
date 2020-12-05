@@ -49,14 +49,10 @@ const generateHTMLPlugins = () => glob.sync('./src/**/*.html')
             meta: {
                 viewport: config.viewport,
             },
-            title: config.site_name
+            title: config.site_name,
+            chunks: [filename.substr(0, filename.indexOf('.')), 'common']
         });
     });
-
-const provider = new webpack.ProvidePlugin({
-    Swiper: 'swiper',
-    'window.Swiper': 'swiper',
-});
 
 const favicons = new WebappWebpackPlugin({
     logo: config.favicon,
@@ -78,7 +74,6 @@ const favicons = new WebappWebpackPlugin({
 });
 
 module.exports = [
-    provider,
     clean,
     cssExtract,
     ...generateHTMLPlugins(),

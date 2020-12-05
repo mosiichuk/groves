@@ -1,0 +1,82 @@
+.projects
+    margin: 60px 0 100px 0
+
+    & a:not(:last-child)
+        display: block
+        margin-bottom: 24px
+
+.project
+    border: 0.5px solid #DADADA
+    padding-left: 77px
+    position: relative
+    color: $text-black
+
+    &:not(:last-child)
+        margin-bottom: 24px
+
+    +screen-down(lg)
+        padding: 24px 14px 14px
+
+    &:hover, &:focus, &:active
+        box-shadow: (0px 0px 64px rgba(0, 0, 0, 0.09))
+        cursor: pointer
+        transition: all 0.5s ease
+
+    &-featured
+
+        +screen-down(lg)
+            padding-top: 56px
+
+        &::before
+            content: 'Featured'
+            position: absolute
+            background-color: $text-accent
+            padding: 5px 75px
+            left: 2px
+            top: 2px
+            color: $text-grey
+
+            +screen-down(lg)
+                padding: 6px 0
+                width: 100%
+                text-align: center
+
+    .subtitle
+        font-size: 32px
+        margin-bottom: 24px
+
+        +screen-down(lg)
+            margin-bottom: 38px
+            font-size: 24px
+
+    .desc
+
+        +screen-down(lg)
+            font-size: 16px
+            text-align: center
+
+    & img
+        padding: 2px
+        height: auto
+        width: 100%
+
+.img-wrapper
+    position: relative
+
+    +screen-down(lg)
+        margin-top: 64px
+        padding: 14px
+
+    &::after
+        content: 'View Project'
+        position: absolute
+        background-color: #ffffff
+        padding: 10px 10px 10px 0
+        left: -23px
+        top: 70px
+
+        +screen-down(lg)
+            left: 50%
+            transform: translateX(-50%)
+            top: -19px
+            padding: 10px 15px

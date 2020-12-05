@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    ${require('./partials/metadata.html')}
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-10 d-flex align-items-center justify-content-center justify-content-md-start mb-4 mb-md-0">
+                <img src="./icons/back-arrow.svg" alt="Back button" class="back-btn">
+                <p class="title">Ryan Groves</p>
+                <span class="header-delimiter">/</span>
+                <p class="page-name">Zya</p>
+            </div>
+            <div class="col-12 col-md-2 text-center text-md-right">
+                <p><a class="home-btn" href="/">Home</a></p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="zya" class="projects">
+    <div class="container">
+        <div class="row d-flex flex-column align-items-center align-items-lg-start flex-md-row">
+            <div class="col-12 col-md-6 col-lg-5">
+                <div class="text-center projects-wrapper text-md-left">
+                    <img class="mb-2" src="./img/Projects/zya_logo.png" alt="zya">
+                    <p class="projects-wrapper text-capitalize">The first aI-assisted composition app</p>
+                </div>
+                <p>Zya was the first of its kind. Using AI, it allowed anyone to create music. Users could sing in, change their voice to an instrument, add custom characters or famous artists to sing/play on their track, and build up a full, studio-quality song.</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-7 video-wrapper">
+                <img class="placeholder" src="./img/Projects/vr_music.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+${require('./partials/footer.html')}
+</body>
+</html>

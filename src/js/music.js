@@ -13,3 +13,4 @@ function initIframe() {
     const albumIFrame = document.getElementById("cherry-album");
     albumIFrame.style.height = albumIFrame.clientWidth * 1.9 + 'px';
 }
+

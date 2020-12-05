@@ -1,22 +1,23 @@
-.modal-dialog
-    max-width: 930px
+.modal
 
-.modal-body
-
-    & .text-bold
-        margin-bottom: 80px
-        margin-left: 80px
-
-    &__element
-        margin-bottom: 31px
-        margin-left: 80px
-
-    & .row
-        margin-bottom: 32px
-
-        &:last-child
-            margin-bottom: 0
-
-    & img
+    &-dialog
+        max-width: 930px
         width: 100%
 
+    &-header
+        padding: 5% 5% 7%
+        border: none
+
+    &-body
+
+        & .text-bold
+            margin: 0 0 5%
+
+            +screen-up(md)
+                margin: 0 0 8%
+
+        & .row:not(:last-child)
+            margin-bottom: 32px
+
+        & img
+            width: 100%

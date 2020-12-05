@@ -11,8 +11,10 @@
         <div class="row">
             <div
                 class="col-12 col-md-10 d-flex align-items-center justify-content-center justify-content-md-start mb-4 mb-md-0">
-                <img src="./icons/back-arrow.svg" alt="Back button" class="back-btn">
-                <p class="title">Ryan Groves</p>
+                <a href="/" class="d-flex">
+                    <img src="./icons/back-arrow.svg" alt="Back button" class="back-btn">
+                    <p class="title">Ryan Groves</p>
+                </a>
                 <span class="header-delimiter">/</span>
                 <p class="page-name">Music</p>
             </div>
@@ -38,27 +40,30 @@
                         releases, with each song paired to an XR experience.
                     </p>
 
-                    <p class="blue-link">
-                        Available now on Bootcamp!
+                    <p>
+                        Available now on <a href="https://raggedgrove.bandcamp.com/releases"
+                                            class="blue-link" target="_blank"
+                                            rel="noopener noreferrer">Bandcamp!</a>
                     </p>
                 </div>
             </div>
 
             <div class="col-12 col-md-5">
-                <iframe style="border: 0"
+                <iframe style="border: 0;"
                         id="whole-track"
-                        src="https://bandcamp.com/EmbeddedPlayer/album=4149376396/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+                        src="https://bandcamp.com/EmbeddedPlayer/album=4149376396/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=4220423532/transparent=true/"
                         seamless>
-                    <a href="https://raggedgrove.bandcamp.com/album/whole-2">
-                        Whole by Ragged Grove
+                    <a href="https://raggedgrove.bandcamp.com/album/whole-2">Whole by
+                        Ragged Grove
                     </a>
                 </iframe>
-
             </div>
         </div>
+    </div>
 
-        <div class="post-divider"></div>
+    <div class="section-divider"></div>
 
+    <div class="container">
         <div class="row justify-content-between post">
             <div class="col-12 col-md-5 order-1 order-md-0">
                 <iframe
@@ -101,35 +106,58 @@
                         </p>
                     </div>
 
-                    <p class="blue-link">
-                        Available now on Bootcamp!
+                    <p>
+                        released October 15, 2009
                     </p>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="post-divider"></div>
+    <div class="section-divider"></div>
 
+    <div class="container">
         <div class="row justify-content-center post">
             <div class="col-12 col-md-5 d-flex align-items-center">
                 <div class="post-info">
                     <h2 class="mb-4 mb-md-2">
-                        Available now on Bootcamp!
+                        <span>UCLA Talent Show 2005</span>
                     </h2>
 
                     <p>
-                        Available now on Bootcamp!
+                        Big Pianist and the G Strings... and Ben
                     </p>
                 </div>
             </div>
 
             <div class="col-12 col-md-5">
-                <img src="./img/music-video-thumbnail.jpg" alt="Video thumbnail" class="w-100 img-fluid">
+                <img src="./img/music-video-thumbnail.jpg" alt="Video thumbnail"
+                     class="w-100 img-fluid">
             </div>
         </div>
     </div>
 </section>
 
-${require('./partials/footer.html')}
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="mb-3">Follow and get the latest news:</p>
+                <div>
+                    <a href="https://twitter.com/ryangrovesmusic/" target="_blank"
+                       rel="noopener noreferrer">
+                        <img src="./icons/twitter.svg" alt="Twitter Logo"
+                             class="social-media-icon mb-0">
+                    </a>
+                    <a href="https://www.linkedin.com/in/ryan-groves/" target="_blank"
+                       rel="noopener noreferrer">
+                        <img src="./icons/linkedin.svg" alt="LinkedIn logo"
+                             class="social-media-icon mb-0">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

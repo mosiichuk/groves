@@ -40,7 +40,13 @@
                 <p class="text-bold">#1 Music App in 25 countries</p>
             </div>
             <div class="col-12 col-md-6 col-lg-7 video-wrapper">
-                <img class="placeholder" src="./img/Projects/vr_music.png" alt="">
+                <div class="video-rel">
+                    <div class="iframe-container">
+                        <iframe
+                            src="https://www.youtube.com/embed/Em3qXLSmlWc"></iframe>
+                    </div>
+                    <a data-toggle="video-modal" data-target="#video-modal" data-video="https://www.youtube.com/embed/Em3qXLSmlWc"></a>
+                </div>
             </div>
         </div>
         <div class="row twitter-wrapp d-flex justify-content-center">
@@ -165,6 +171,6 @@
     </div>
 </section>
 
-
+${require('./partials/video-popup.html')}
 </body>
 </html>

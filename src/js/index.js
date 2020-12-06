@@ -4,24 +4,38 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function initPopups() {
     const backdrop = document.getElementById('backdrop');
+    const modal = document.getElementById('video-modal');
+    const videoIFrame = document.getElementById('video');
+    const closeModalButton = document.querySelector(`#video-modal .close`);
 
-    document.querySelectorAll("[data-toggle=\"modal\"]").forEach(openModalButton => {
-        const modal = document.querySelector(openModalButton.dataset.target);
-        const closeModalButton = document.querySelector(`${openModalButton.dataset.target} .close`);
+    document.querySelectorAll("[data-toggle=\"video-modal\"]").forEach(openModalButton => {
+        const videoSource = openModalButton.dataset.video;
 
         openModalButton.addEventListener('click', () => {
+            if (videoIFrame)
+                videoIFrame.src = videoSource;
+
             openModal(modal, backdrop);
         });
+    });
 
-        modal.addEventListener('click', (event) => {
-            if (event.target === modal)
-                closeModal(modal, backdrop);
-        })
+    modal.addEventListener('click', (event) => {
+        if (event.target !== modal)
+            return;
 
-        closeModalButton.addEventListener('click', () => {
-            closeModal(modal, backdrop);
-        });
-    })
+        if (videoIFrame)
+            videoIFrame.src = '';
+
+        closeModal(modal, backdrop);
+    });
+
+
+    closeModalButton.addEventListener('click', () => {
+        if (videoIFrame)
+            videoIFrame.src = '';
+
+        closeModal(modal, backdrop);
+    });
 }
 
 function closeModal(modal, backdrop) {

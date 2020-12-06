@@ -70,7 +70,7 @@
                 <iframe
                     title="Cherry by The Twisted Limbs"
                     id="cherry-album"
-                    class="album-iframe" style="border: 0;"
+                    style="border: 0;"
                     src="https://bandcamp.com/EmbeddedPlayer/album=3520343589/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/"
                     seamless>
                     <a href="https://ryangroves.bandcamp.com/album/cherry">
@@ -131,39 +131,19 @@
                     </p>
                 </div>
             </div>
-            <div class="video-rel">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/NSz5FlGaSkQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <a data-toggle="modal" data-target="#ULCA"></a>
-            </div>
-        </div>
-    </div>
-
-<div class="modal-backdrop d-none fade" id="backdrop"></div>
-
-<div class="modal fade d-none" id="ULCA" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><img src="./icons/close.svg" alt="Close"></span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="container-fluid">
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-12">
-                            <div class="iframe-container">
-                                <iframe src="https://www.youtube.com/embed/NSz5FlGaSkQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-12 col-md-5 d-flex align-items-center video-rel">
+                <div class="iframe-container">
+                    <iframe src="https://www.youtube.com/embed/NSz5FlGaSkQ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
+                <a data-toggle="video-modal" data-target="#video-modal" data-video="https://www.youtube.com/embed/NSz5FlGaSkQ"></a>
             </div>
+
         </div>
     </div>
-</div>
+
 </section>
 
 ${require('./partials/footer.html')}
+${require('./partials/video-popup.html')}
 </body>
 </html>

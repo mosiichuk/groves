@@ -8,7 +8,8 @@
 <header>
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-10 d-flex align-items-center justify-content-center justify-content-md-start mb-4 mb-md-0">
+            <div
+                class="col-12 col-md-10 d-flex align-items-center justify-content-center justify-content-md-start mb-4 mb-md-0">
                 <a href="/projects.html" class="d-flex">
                     <img src="./icons/back-arrow.svg" alt="Back button" class="back-btn">
                     <p class="title">Ryan Groves</p>
@@ -25,19 +26,6 @@
 
 <section id="melodrive" class="projects">
     <div class="container">
-        <!-- <div class="row d-flex flex-column align-items-center flex-md-row">
-            <div class="col-12 col-md-6 col-lg-5">
-                <div class="text-center projects-wrapper text-md-left">
-                    <img class="mb-2" src="./img/Projects/melodrive_main_logo.png" alt="melodrive">
-                    <p class="projects-wrapper text-capitalize">The adaptive aI composer</p>
-                </div>
-                <p class="mb-4">Melodrive is an AI composer that sits inside a digital world. It listens to events happening in a game or XR experience and creates music that fits the mood. On the fly.</p>
-                <p>Released as a Unity plugin, Melodrive can create music for any interactive environment. Creators can create new songs instantly, choose styles and instruments, and have a seamless, emotionally-driven music experience.</p>
-            </div>
-            <div class="col-12 col-md-6 col-lg-7 video-wrapper">
-                <img class="placeholder" src="./img/Projects/vr_music.png" alt="">
-            </div>
-        </div> -->
         <div class="container">
             <div class="row d-flex flex-column align-items-center flex-md-row">
                 <div class="col-12 col-md-5">
@@ -45,11 +33,22 @@
                         <img class="mb-2" src="./img/Projects/melodrive_main_logo.png" alt="potus">
                         <p class="projects-wrapper text-capitalize">The adaptive aI composer</p>
                     </div>
-                    <p class="mb-4">Melodrive is an AI composer that sits inside a digital world. It listens to events happening in a game or XR experience and creates music that fits the mood. On the fly.</p>
-                    <p>Released as a Unity plugin, Melodrive can create music for any interactive environment. Creators can create new songs instantly, choose styles and instruments, and have a seamless, emotionally-driven music experience.</p>
+                    <p class="mb-4">Melodrive is an AI composer that sits inside a digital world. It
+                        listens to events happening in a game or XR experience and creates music
+                        that fits the mood. On the fly.</p>
+                    <p>Released as a Unity plugin, Melodrive can create music for any interactive
+                        environment. Creators can create new songs instantly, choose styles and
+                        instruments, and have a seamless, emotionally-driven music experience.</p>
                 </div>
                 <div class="col-7 video-wrapper">
-                    <img class="placeholder" src="./img/Projects/vr_music.png" alt="">
+                    <div class="video-rel">
+                        <div class="iframe-container">
+                            <iframe
+                                src="https://www.youtube.com/embed/VzRQNQQd2Lc"></iframe>
+                        </div>
+                        <a data-toggle="video-modal" data-target="#video-modal"
+                           data-video="https://www.youtube.com/embed/VzRQNQQd2Lc"></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -57,5 +56,6 @@
 </section>
 
 ${require('./partials/footer.html')}
+${require('./partials/video-popup.html')}
 </body>
 </html>

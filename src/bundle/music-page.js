@@ -1,2 +1,2 @@
 import '../styles/music.sass';
-import '../js/music';
+import '../js/music.js';

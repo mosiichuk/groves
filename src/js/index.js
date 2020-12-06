@@ -8,7 +8,12 @@ function initPopups() {
     const videoIFrame = document.getElementById('video');
     const closeModalButton = document.querySelector(`#video-modal .close`);
 
-    document.querySelectorAll("[data-toggle=\"video-modal\"]").forEach(openModalButton => {
+    const videoTogglers = document.querySelectorAll("[data-toggle=\"video-modal\"]");
+
+    if (videoTogglers)
+        return;
+
+    videoTogglers.forEach(openModalButton => {
         const videoSource = openModalButton.dataset.video;
 
         openModalButton.addEventListener('click', () => {

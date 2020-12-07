@@ -10,7 +10,7 @@ function initPopups() {
 
     const videoTogglers = document.querySelectorAll("[data-toggle=\"video-modal\"]");
 
-    if (!videoTogglers)
+    if (!videoTogglers || videoTogglers.length === 0)
         return;
 
     videoTogglers.forEach(openModalButton => {
@@ -18,7 +18,7 @@ function initPopups() {
 
         openModalButton.addEventListener('click', () => {
             if (videoIFrame)
-                videoIFrame.src = videoSource;
+                videoIFrame.contentWindow.location.replace(videoSource);
 
             openModal(modal, backdrop);
         });
@@ -29,7 +29,7 @@ function initPopups() {
             return;
 
         if (videoIFrame)
-            videoIFrame.src = '';
+            videoIFrame.contentWindow.location.replace('');
 
         closeModal(modal, backdrop);
     });
@@ -37,7 +37,7 @@ function initPopups() {
 
     closeModalButton.addEventListener('click', () => {
         if (videoIFrame)
-            videoIFrame.src = '';
+            videoIFrame.contentWindow.location.replace('');
 
         closeModal(modal, backdrop);
     });

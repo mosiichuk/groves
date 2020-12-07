@@ -10,7 +10,7 @@ function initPopups() {
 
     const videoTogglers = document.querySelectorAll("[data-toggle=\"video-modal\"]");
 
-    if (videoTogglers)
+    if (!videoTogglers)
         return;
 
     videoTogglers.forEach(openModalButton => {

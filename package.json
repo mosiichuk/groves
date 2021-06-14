@@ -40,7 +40,7 @@
         "webapp-webpack-plugin": "^2.7.1",
         "webpack": "^4.44.2",
         "webpack-cli": "^3.3.12",
-        "webpack-merge": "^4.2.1"
+        "webpack-merge": "^5.8.0"
     },
     "dependencies": {
         "clear": "^0.1.0",
